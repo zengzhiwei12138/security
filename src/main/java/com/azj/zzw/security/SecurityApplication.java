@@ -16,6 +16,11 @@ public class SecurityApplication {
 
 	@RequestMapping("/")
 	public String home(){
+		return "hello spring boot";
+	}
+
+	@RequestMapping("/hello")
+	public String hello(){
 		return "hello spring security";
 	}
 
